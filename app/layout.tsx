@@ -29,7 +29,11 @@ export default function RootLayout({
       <body
         className={cn("min-h-screen bg-background font-geist-sans antialiased", geistSans.variable ,geistMono.variable)}
       >
-        {children}
+        <div className="relative min-h-dvh flex flex-col bg-background">
+            <main className="flex-1">
+                {children}
+            </main>
+        </div>
       </body>
     </html>
   );
