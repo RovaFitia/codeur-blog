@@ -6,7 +6,7 @@
 git clone https://github.com/RovaFitia/codeur-blog
 ```
 
-### Install dependencies
+### Install all dependencies with bun
 
 ```bash
 bun install
