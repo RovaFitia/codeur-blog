@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "bun run concurrently \"bun run next:dev\" \"bun run velite:watch\"",
+    "next:dev": "next dev --turbopack",
+    "build": "bun run next:build && bun run velite:build",
+    "next:build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "velite:watch": "velite --watch",
+    "velite:build": "velite"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
@@ -23,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.1.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
     "postcss": "^8",
