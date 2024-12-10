@@ -6,6 +6,7 @@ export const siteConfig = {
     links: {
         twitter: "https://twitter.com/RovaFitia",
         github: "https://github.com/RovaFitia",
+        discord: "https://github.com/RovaFitia",
         linkedin: "https://www.linkedin.com/in/rovafitia/",
         personalSite: "https://codeur-mdg.vercel.app/"
     }
