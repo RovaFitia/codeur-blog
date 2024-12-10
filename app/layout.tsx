@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Header from "@/components/layout/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={cn("min-h-screen bg-background font-geist-sans antialiased", geistSans.variable ,geistMono.variable)}
       >
         <div className="relative min-h-dvh flex flex-col bg-background">
+            <Header/>
             <main className="flex-1">
                 {children}
             </main>
