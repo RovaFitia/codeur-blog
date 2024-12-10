@@ -14,6 +14,12 @@ const Header = () => {
             <div className="flex flex-1 items-center justify-end space-x-2">
                 {/* Social icon */}
                 <nav className="flex items-center"> 
+                    <Link href={siteConfig.links.personalSite} target="_blank" rel="noreferrer">
+                        <div className={cn(buttonVariants({variant: "ghost"}), "w-10 px-0")}>
+                            <Icons.globe className="w-4 h-4" />
+                            <span className="sr-only">Site</span>
+                        </div>
+                    </Link>
                     <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
                         <div className={cn(buttonVariants({variant: "ghost"}), "w-10 px-0")}>
                             <Icons.github className="w-4 h-4" />
@@ -26,6 +32,7 @@ const Header = () => {
                             <span className="sr-only">Twitter</span>
                         </div>
                     </Link>
+                    
                 </nav>
             </div>
         </div>
