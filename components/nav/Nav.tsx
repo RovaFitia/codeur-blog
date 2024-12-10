@@ -10,7 +10,7 @@ const Nav = () => {
     return (
         <nav className="flex items-center space-x-4 lg:space-x-6">
             <Link href="/" className="mr-2 md:mr-6 flex items-center space-x-2">
-                <Image src={Logo} alt="logo" width={35} height={35} />
+                <Image src={Logo} alt="logo" width={30} height={30} />
                 <span className="font-geistSans font-bold">{siteConfig.name}</span>
             </Link>
 
